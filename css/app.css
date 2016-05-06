@@ -1,0 +1,168 @@
+body {
+  min-height: 100%;
+  background: #eff7c7; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.flashcard-container-text {
+  font-family: "Roboto", sans-serif; }
+
+.m-t-3 {
+  margin-top: 60px; }
+
+.m-t-2 {
+  margin-top: 40px; }
+
+.m-t-1 {
+  margin-top: 20px; }
+
+.m-b-1 {
+  margin-bottom: 20px; }
+
+.p-y-1 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.btn-bad {
+  border-radius: 4px;
+  background: #f79f79;
+  color: black;
+  border: 0px #f79f79 solid;
+  font-size: 160%;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 4em;
+  -webkit-transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1, 1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms; }
+  .btn-bad:hover {
+    -webkit-transform: scale(1.1, 1.15);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transfrom: scale(1.1, 1.15);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    background: #f15a19; }
+
+.btn-soso {
+  border-radius: 4px;
+  background: #f7d08a;
+  color: black;
+  border: 0px #f7d08a solid;
+  font-size: 160%;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 4em;
+  -webkit-transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1, 1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms; }
+  .btn-soso:hover {
+    -webkit-transform: scale(1.1, 1.15);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transfrom: scale(1.1, 1.15);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    background: #f0aa2b; }
+
+.btn-good {
+  border-radius: 4px;
+  background: #e3f09b;
+  color: black;
+  border: 0px #e3f09b solid;
+  font-size: 160%;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 4em;
+  -webkit-transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1, 1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms; }
+  .btn-good:hover {
+    -webkit-transform: scale(1.1, 1.15);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transfrom: scale(1.1, 1.15);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    background: #cae342; }
+
+.btn-great {
+  border-radius: 4px;
+  background: #e6f0ed;
+  color: black;
+  border: 0px #e6f0ed solid;
+  font-size: 160%;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 4em;
+  -webkit-transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1, 1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms; }
+  .btn-great:hover {
+    -webkit-transform: scale(1.1, 1.15);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transfrom: scale(1.1, 1.15);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    background: #a7c9be; }
+
+.column-half {
+  width: 50%;
+  margin-left: 25%; }
+  @media screen and (max-width: 768px) {
+    .column-half {
+      width: 100%;
+      margin-left: 0%; } }
+
+.column-quarter {
+  width: 25%;
+  margin-left: 37.5%; }
+  @media screen and (max-width: 768px) {
+    .column-quarter {
+      width: 100%;
+      margin-left: 0%; } }
+
+.flashcard-style {
+  box-shadow: 0px 0px 5px 5px #518675;
+  background: #87b6a7;
+  border: 3px #518675 solid;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=app.css.map */

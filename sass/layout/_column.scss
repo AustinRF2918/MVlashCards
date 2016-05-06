@@ -1,0 +1,33 @@
+@mixin column-generate($width, $breakpoint, $selector)
+{
+    .#{$selector}
+    {
+	width: $width;
+	margin-left: ((100% - $width)/2);
+
+        @media screen and (max-width: $breakpoint)
+        {
+            width: 100%;
+            margin-left: 0%;
+        }
+
+    }
+}
+
+@mixin column-stylize($background, $border, $selector)
+{
+    .#{$selector}
+    {
+        box-shadow: 0px 0px 5px 5px darken($background, 20%);
+        background: $background;
+        border: 3px $border solid;
+        border-radius: 5px;
+    }
+}
+
+
+
+@include column-generate(50%, 768px, column-half);
+@include column-generate(25%, 768px, column-quarter);
+@include column-stylize(#87b6a7, darken(#87b6a7, 20%), flashcard-style);
+

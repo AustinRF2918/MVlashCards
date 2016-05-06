@@ -1,0 +1,30 @@
+$margin-large : 30px * 2;
+$margin-medium : 20px * 2;
+$margin-small : 10px * 2;
+
+.m-t-3
+{
+    margin-top: $margin-large;
+}
+
+.m-t-2
+{
+    margin-top: $margin-medium;
+}
+
+.m-t-1
+{
+    margin-top: $margin-small;
+}
+
+.m-b-1
+{
+    margin-bottom: $margin-small;
+}
+
+
+.p-y-1
+{
+    padding-top: $margin-small;
+    padding-bottom: $margin-small;
+}

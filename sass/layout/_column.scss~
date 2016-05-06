@@ -1,0 +1,13 @@
+.container
+{
+    width: 50%;
+    margin-left: 25%;
+
+
+    //Handles mobile screens
+    @media screen and (max-width: 768px)
+    {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
