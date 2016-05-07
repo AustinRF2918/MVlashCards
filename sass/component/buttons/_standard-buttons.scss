@@ -27,7 +27,71 @@
             -webkit-transform: scale(1.1, 1.15);
             -webkit-transition-timing-function: ease-out;
             -webkit-transition-duration: 250ms;
-            -moz-transfrom: scale(1.1, 1.15);
+            -moz-transform: scale(1.1, 1.15);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+            background: darken($background, 20%);
+
+        }
+    }
+}
+
+@mixin btn-generate-full($background, $foreground, $border, $border-size, $size, $selector)
+{
+    .#{$selector}
+    {
+        border-radius: 4px;
+        background: $background;
+        color: darken($foreground, 40%);
+        border: $border-size $border solid;
+        font-size: $size / 1.25;
+        cursor: pointer;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        min-width: 4em;
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+
+        &:hover
+        {
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+            background: darken($background, 20%);
+
+        }
+    }
+}
+
+@mixin btn-generate-mini($background, $foreground, $border, $border-size, $size, $selector)
+{
+    .#{$selector}
+    {
+        border-radius: 4px;
+        background: $background;
+        color: darken($foreground, 40%);
+        border: $border-size $border solid;
+        font-size: $size / 1.25;
+        cursor: pointer;
+        width: 50px;
+        height: 40px;
+        margin-left: 178px;
+        margin-top: 15px;
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+
+        &:hover
+        {
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
             -moz-transition-timing-function: ease-out;
             -moz-transition-duration: 250ms;
             background: darken($background, 20%);
@@ -40,3 +104,5 @@
 @include btn-generate(#f7d08a, #5b5941, #f7d08a, 0px, 160%, btn-soso);
 @include btn-generate(#e3f09b, #5b5941, #e3f09b, 0px, 160%, btn-good);
 @include btn-generate(lighten(#87b6a7, 30%), #5b5941, lighten(#87b6a7, 30%), 0px, 160%, btn-great);
+@include btn-generate-full(#e3f09b, #5b5941, #e3f09b, 0px, 160%, btn-ctrl);
+@include btn-generate-mini(darken(#f79f79, 20%), #5b5941, #f79f79, 0px, 160%, btn-close);

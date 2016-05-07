@@ -11,31 +11,46 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </head>
     <body>
+    <div class="column-quarter flashcard-container-text easy-nav-style top-xs-1-over row-xs-6-over" id="settings-container">
+        <button class="btn-close">&times;</button>
+        <h2 class="text-center m-t-2">Control Panel</h2>
+            <button class="btn-ctrl m-t-1">Home</button>
+            <button class="btn-ctrl m-t-1">Settings</button>
+            <button class="btn-ctrl m-t-1">Modify</button>
+            <button class="btn-ctrl m-t-1">Decks</button>
+    </div>
+    <div class="column-quarter flashcard-container-text easy-nav-style top-xs-1-over row-xs-1-over hide" id="settings-mini-container">
+        <button class="btn-close full-width">&darr;</button>
+    </div>
     <div class="text-center flashcard-container-text">
         <h1>Your Kloses For The Day</h1>
     </div>
-    <div class="flashcard-container-text flashcard-style column-half p-y-1 top-xs-2-over row-xs-3-over">
+    <div class="flashcard-container-text flashcard-style column-half-centered p-y-1 top-xs-2-over row-xs-3-over">
         <div class="">
           <div class="flash-title text-center">
-            <h2 id="attribute-Title">Your Title Here</h2>
+            <h2 id="attribute-Title"></h2>
           </div>
         </div>
-        <div class="column-half m-t-2">
+        <div class="column-half-centered m-t-2">
           <div class="flash-content text-left">
-              <p id="data-CurrentText">Your Content Here</p>
-              <p id="data-CurrentAnswer">Your Content Here</p>
+              <p id="data-CurrentText"></p>
+          </div>
+          <div class="flash-content text-left">
+              <p id="data-CurrentAnswer" class="m-t-2"></p>
           </div>
         </div>
     </div>
     </div>
-    <div class="row content-center m-t-1 text-center flashcard-style  column-half">
+    <div class="row content-center m-t-1 text-center flashcard-style  column-half-centered">
         <button class="btn-bad m-t-1 m-b-1">Bad</button>
         <button class="btn-soso m-t-1 m-b-1">So-So</button>
         <button class="btn-good m-t-1 m-b-1">Good</button>
         <button class="btn-great m-t-1 m-b-1">Great</button>
 	<p class="text-center flashcard-container-text">Current Card <span id="attribute-cq"></span> of <span id="attribute-tq"></span>
     </div>
-    <script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
     <script src="js/framework/controller.js"></script>
     <script src="js/framework/model.js"></script>
     <script src="js/framework/view.js"></script>

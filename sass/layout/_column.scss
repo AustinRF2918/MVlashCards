@@ -1,4 +1,4 @@
-@mixin column-generate($width, $breakpoint, $selector)
+@mixin column-generate-centered($width, $breakpoint, $selector)
 {
     .#{$selector}
     {
@@ -14,20 +14,76 @@
     }
 }
 
+@mixin column-generate($width, $breakpoint, $selector)
+{
+    .#{$selector}
+    {
+	width: $width;
+
+        @media screen and (max-width: $breakpoint)
+        {
+            width: 100%;
+            margin-left: 0%;
+        }
+
+    }
+}
+
+
 @mixin column-stylize($background, $border, $selector)
 {
     .#{$selector}
     {
-        box-shadow: 0px 0px 5px 5px darken($background, 20%);
+        box-shadow: 5px 5px 5px 0px darken($background, 10%);
         background: $background;
-        border: 3px $border solid;
+        border: 0px $border solid;
+        border-radius: 5px;
+    }
+}
+
+@mixin column-stylize-nosh($background, $border, $selector)
+{
+    .#{$selector}
+    {
+        background: $background;
+        border: 0px $border solid;
         border-radius: 5px;
     }
 }
 
 
 
-@include column-generate(50%, 768px, column-half);
-@include column-generate(25%, 768px, column-quarter);
+@include column-generate-centered(50%, 768px, column-half-centered);
+@include column-generate-centered(25%, 768px, column-quarter-centered);
+@include column-generate(12.5%, 768px, column-quarter);
 @include column-stylize(#87b6a7, darken(#87b6a7, 20%), flashcard-style);
+@include column-stylize-nosh(#f79f79, darken(#87b6a7, 20%), easy-nav-style);
 
+.easy-nav-style
+{
+    margin-left: 2.5%;
+    position: absolute;
+}
+
+.hide
+{
+    -ms-transfrom: scale(0, 1);
+    -mz-transfrom: scale(0, 1);
+    -webkit-transfrom: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.full-width
+{
+    padding-top: 2%;
+    margin-left: 4%;
+    width: 92.5%;
+}
+
+.flashcard-container-text
+{
+    p{
+        font-size: 24px;
+    }
+     
+}
