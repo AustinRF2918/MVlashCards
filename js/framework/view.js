@@ -96,12 +96,12 @@ ViewEntity.prototype.endFunction = function()
     for (let selector of this.staticDOMRelationsContigDBList)
     {
 	var indexValue = this.staticDOMRelationsIndexerQuery[selector]();
-	$(selector).text(this.staticDOMRelationsContigDB[selector][indexValue]);
+	$(selector).html(this.staticDOMRelationsContigDB[selector][indexValue]);
     }
 
     for (let selector of this.staticDOMRelationsAttrQueryList)
     {
-	$(selector).text(this.staticDOMRelationsAttrQuery[selector]);
+	$(selector).html(this.staticDOMRelationsAttrQuery[selector]);
     }
 };
 
